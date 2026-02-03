@@ -16,7 +16,7 @@ services:
     #
     # Opsi B (dev/local): build dari source (jangan untuk customer)
     #build: .
-    image: riscoaditya/fr-sdk:1.0.0
+    image: ghcr.io/riscoaditya/fr-sdk:1.0.0
     container_name: fr_api
     depends_on:
       - db
