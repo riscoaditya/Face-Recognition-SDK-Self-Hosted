@@ -2,13 +2,17 @@
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat-25D366?logo=whatsapp&logoColor=white)](https://wa.me/6282140000211)
 
 # Face Recognition SDK (Self-Hosted) - Install Guide
-Face Recognition SDK (Self-Hosted) is an enterprise-grade facial recognition solution designed for organizations that require full control, privacy, and on-premise deployment.
+Face Recognition SDK (Self-Hosted) is an **enterprise-grade facial recognition solution** designed for organizations that require **full control, privacy, and on-premise deployment**.
 
-This solution is ideal for companies that want to integrate face recognition into their own systems while keeping all data inside their own infrastructure.
+This SDK is ideal for companies that want to integrate face recognition into their own systems while keeping **all biometric data within their own infrastructure**.
+
+---
 
 ## Requirements
 - Docker + Docker Compose
 - Linux / Windows / macOS server
+
+---
 
 ## Step 1 — Prepare Host ID (for stable licensing)
 ### macOS/Linux
@@ -39,7 +43,13 @@ Edit `.env`:
 docker compose up -d
 
 ## Step 4 — Get Fingerprint (Activation)
-If you don't have a license yet, start the service and request fingerprint:
+If you do not have a license yet, no worries.
+
+You may either:
+- Request a **fingerprint** for license activation, or
+- Use the **trial mode** with up to **50 API requests** for `enroll`, `identify`, and `verify`.
+
+This allows you to evaluate the SDK before purchasing a license.
 
 curl -H "X-Admin-Key: <ADMIN_KEY>" http://localhost:8080/v1/admin/fingerprint
 

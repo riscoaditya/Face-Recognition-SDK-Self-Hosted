@@ -42,8 +42,10 @@ services:
     volumes:
       - ./models:/models
       - ./host_id.txt:/etc/frsdk/host_id:ro
+      - frsdk_state:/var/lib/frsdk
 
     restart: unless-stopped
 
 volumes:
   frsdk_pg:
+  frsdk_state:
