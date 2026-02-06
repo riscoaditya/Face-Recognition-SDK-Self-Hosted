@@ -30,6 +30,13 @@ services:
 
       DATABASE_URL: postgresql+psycopg2://frsdk:frsdk_password@db:5432/frsdk
 
+      # Security
+      API_KEY: ${API_KEY}
+      ADMIN_KEY: ${ADMIN_KEY}
+
+      # License
+      LICENSE_KEY: ${LICENSE_KEY}
+      
       # Models inside container
       MODEL_DIR: /models
       DETECTOR_ONNX: /models/detector.onnx
